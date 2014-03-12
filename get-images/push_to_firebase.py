@@ -1,5 +1,7 @@
 """
 http://statigr.am/tag/duckfaces
+http://statigr.am/tag/selfies
+
 //div[@class="image-wrapper"]/a/img/@src
 """
 
@@ -20,7 +22,7 @@ for i,u in enumerate(keep_urls):
 old = fb.get('/training', None).values()
 old_urls = [row['url'] for row in old if row != None]
 
-new_urls = file('instagram-selfie-8.txt').read().splitlines()[:20]
+new_urls = file('instagram-selfie-8.txt').read().splitlines()
 keep_urls = set(new_urls).difference(set(old_urls))
 
 for i,u in enumerate(keep_urls):
