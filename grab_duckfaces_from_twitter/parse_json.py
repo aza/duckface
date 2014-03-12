@@ -2,7 +2,7 @@ import json
 import glob
 import re
 
-G = glob.glob('json/*.json')
+G = glob.glob('json/selfie/media*.json')
 
 for g in G:
     L = file(g).readlines()
@@ -17,6 +17,9 @@ for g in G:
             pass
 
         except KeyError:
+            pass
+
+        except ValueError:
             pass
 
 
