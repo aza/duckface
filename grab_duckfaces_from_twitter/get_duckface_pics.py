@@ -12,7 +12,8 @@ api = twitter.Api(
 
 last_id = None
 for x in range(100):
-    A = api.GetSearch("#duckface", include_entities=True, count=100, max_id=last_id)
+    # A = api.GetSearch("#duckface", include_entities=True, count=100, max_id=last_id)
+    A = api.GetSearch("#selfie", include_entities=True, count=100, max_id=last_id)
     U = [a.media[0]["media_url"] for a in A if a.media != []]
     last_id = A[-1].AsDict()['id']
 
