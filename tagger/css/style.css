@@ -8,6 +8,8 @@ body{
 
 .face{
 	max-width: 400px;
+	width: 400px;
+	height: 400px;
 	margin: 10px;
 	display: block;
 	border: 5px solid #EE6363;
@@ -16,3 +18,23 @@ body{
 .hasFaceppJson{
 	border: 5px solid #20B2AA;
 }
+
+.dot{
+	border-radius: 300px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	border: 2px solid white;
+}
+
+.isDuck{
+	background-color: rgba(0,150,0,.5);
+}
+
+.notDuck{
+	background-color: rgba(150,0,0,.5);
+}
+
+.notYetTagged{
+	border: 2px solid rgba(255,255,255,1);
+}
+
